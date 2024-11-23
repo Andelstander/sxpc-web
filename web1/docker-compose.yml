@@ -1,0 +1,11 @@
+version: "2"
+ 
+services:
+ 
+  web:
+    build: .
+    restart: always
+    ports:
+      - "0.0.0.0:10001:80"
+    environment:
+      - FLAG=flag{Web1_SchnEiDer@_s8scaA}
